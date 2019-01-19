@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist/",
+        "strict": true,
+        "sourceMap": true,
+        "watch" : false, //do not watch - vscode cannot run the app because of watch is blocking everything
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tesla-trip-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc && node ./dist/index.js",
+    "redeploy": "scp -r src/ *.json Dockerfile docker-compose.yml alex@macmini:/home/alex/docker/xxx/ && ssh alex@macmini 'cd /home/alex/docker/xxx/ && docker-compose stop && docker-compose up -d --build && docker-compose logs -f --tail 100'"
+  },
+  "author": "Alexander Heinze",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ws": "^6.0.1",
+    "typescript": "^3.2.4"
+  }
+}
